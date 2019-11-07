@@ -60,7 +60,7 @@ inputs:
   - id: $CORDOVA_ID
     opts:
       title: Cordova ID
-      summary: Modify the attribute `id` the config.xml file
+      summary: Modify the attribute `id` the config.xml file and the package name in google-services.json
       is_expand: true
       is_required: false
   - android_version_code: $CORDOVA_ANDROID_VERSION_CODE
@@ -72,7 +72,7 @@ inputs:
   - android_package_name: $CORDOVA_ANDROID_PACKAGE_NAME
     opts:
       title: Android package name
-      summary: Modify the attribute `android-packageName` in the config.xml file
+      summary: Modify the attribute `android-packageName` in the config.xml file and the package name in google-services.json
       is_expand: true
       is_required: false
   - ios_bundle_version: $CORDOVA_IOS_BUNDLE_VERSION

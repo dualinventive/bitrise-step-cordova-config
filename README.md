@@ -1,6 +1,6 @@
 # cordova-config
 
-Manipulate cordova config.xml main attributes
+Manipulate cordova config.xml main attributes and the package name in `google-services.json`.
 
 ## How to use this Step
 
