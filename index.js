@@ -11,6 +11,7 @@ const CONFIG_FILE_PATH = process.env['config_path'] || 'config.xml';
 
 const NAME = process.env['name'];
 const ID = process.env['id'];
+const VERSION = process.env['version'];
 
 const ANDROID_VERSION_CODE = process.env['android_version_code'];
 const ANDROID_PACKAGE_NAME = process.env['android_package_name'];
@@ -21,15 +22,21 @@ const IOS_BUNDLE_IDENTIFIER = process.env['ios_bundle_identifier'];
 const config = new Config(path.join(SOURCE_PATH, CONFIG_FILE_PATH));
 
 if (NAME) {
-    config.setName(NAME);
+  config.setName(NAME);
 
     log('name', NAME);
 }
 
 if (ID) {
-    config.setID(ID);
+  config.setID(ID);
 
     log('id', ID);
+}
+
+if (VERSION) {
+  config.setVersion(VERSION);
+
+  log('version', VERSION);
 }
 
 if (ANDROID_VERSION_CODE) {
